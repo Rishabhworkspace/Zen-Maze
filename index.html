@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png"
+        type="image/png">
+    <title>Calming Maze - Meditative Navigation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="game-wrapper">
+        <header class="game-header">
+            <h1>Zen Maze</h1>
+            <p>Use arrow keys to guide the glowing orb to the exit</p>
+        </header>
+        
+        <div class="game-container">
+            <canvas id="gameCanvas"></canvas>
+            <div class="victory-message" id="victoryMessage">
+                <h2>🌟 Well Done! 🌟</h2>
+                <p>You've found your way through the maze</p>
+                <button id="playAgainBtn">Journey Again</button>
+            </div>
+        </div>
+        
+        <footer class="game-footer">
+            <div class="footer-left">
+                <span class="progress-text">Progress: <span id="progressText">0%</span></span>
+            </div>
+            <div class="footer-center">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <button id="muteBtn" class="control-btn">🔊</button>
+                <button id="resetBtn" class="control-btn">🔄 Reset</button>
+                <button id="newMazeBtn" class="control-btn">🎲 New Maze</button>
+                <button id="homeBtn" class="control-btn">🏠 Home</button>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
